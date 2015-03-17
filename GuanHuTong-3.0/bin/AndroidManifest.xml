@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.changhongit.guanhutong3"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.beem.project.beem.BEEM_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.changhongit.guanhutong3.application.GhtApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="69c0cbd8fb3d633220b21a78c7f625ad" />
+
+        <activity
+            android:name="com.changhongit.guanhutong3.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.whitelist.WhiteListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.whitelist.detail.WhiteListDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.trace.PortalActivity"
+            android:label="轨迹回放设置"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.trace.SetTimeActivity"
+            android:label="设置时间"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.trace.TraceActivity"
+            android:label="轨迹回放"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.alert.AlertActivity"
+            android:label="报警"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.alert.AlertDetailActivity"
+            android:label="报警位置"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.health.bloodoxygen.BloodOxygenActivity"
+            android:label="血氧"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.health.bloodpressure.BloodPressureActivity"
+            android:label="血压"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.health.bloodsugar.BloodSugarActivity"
+            android:label="血糖"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.health.bodycompositions.BodyCompositionsActivity"
+            android:label="体脂"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.events.EventsListActivity"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.events.EventsDetailActivity"
+            android:label="体脂"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.setting.terminal.TerminalSettingActivity"
+            android:label="编辑当前终端"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.area.AreaMainActivity"
+            android:label="防护圈"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.contacts.ContactsActivity"
+            android:label="联系人"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.personal_setting.PersonalSettingActivity"
+            android:label="个人设置"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.setting.terminal.TerminalListActivity"
+            android:label="终端删除列表"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.call_setting.CallSettingActivity"
+            android:label="接听设置"
+            android:theme="@android:style/@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.dialogs.SelectReminderStyleDialog"
+            android:label="选择提醒方式对话框"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.dialogs.SelectWeekDialog"
+            android:label="选择星期对话框"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.dialogs.SelectTimeDialog"
+            android:label="选择时间对话框"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.changhongit.guanhutong3.dialogs.SelectDateTimeDialog"
+            android:label="选择时间对话框"
+            android:theme="@style/MyDialogStyle" />
+    </application>
+
+</manifest>

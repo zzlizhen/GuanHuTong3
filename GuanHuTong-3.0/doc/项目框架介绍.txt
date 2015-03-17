@@ -1,0 +1,13 @@
+com.changhongit.guanhutong3.login  //��¼ģ�飬�Ѿ�����Ϊmvpģʽ������ģ�鶼���ô��ַ�ʽ��
+com.changhongit.guanhutong3.main   //��ͼ��ҳģ��,��δ������ɣ��Ժ�ÿ��ģ�鵥��һ��package��
+.
+.
+.
+
+com.changhongit.guanhutong3.base   //activityģ�壬����activity���̳������BaseActivity
+com.changhongit.guanhutong3.application  //application,����ȫ�ֱ��������̳�ʼ����
+com.changhongit.guanhutong3.webservice   //webservice������ģʽ��ʵ��http get,post���������󷽷�
+com.changhongit.guanhutong3.utils	//�������
+签名密码：都是changhongit
+
+

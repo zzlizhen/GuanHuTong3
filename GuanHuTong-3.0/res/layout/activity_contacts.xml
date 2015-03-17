@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/return_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/return_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="联络人"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+             android:textSize="18sp"
+             android:background="@android:color/transparent"
+             android:textColor="@android:color/white"
+             android:visibility="invisible"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e2e2e2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/frist_edit_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/edit_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/frist_edit_icon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="第一联络人：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/first_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/frist_edit_icon"
+                        android:layout_weight="1"
+                         android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+
+                    <EditText
+                        android:id="@+id/first_contact_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/frist_edit_icon"
+                        android:layout_weight="2"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/second_edit_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/edit_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/second_edit_icon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                     android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="第二联络人：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/second_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/second_edit_icon"
+                        android:layout_weight="1"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+
+                    <EditText
+                        android:id="@+id/second_contact_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/second_edit_icon"
+                        android:layout_weight="2"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/third_edit_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/edit_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/third_edit_icon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                     android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="第三联络人：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/third_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/third_edit_icon"
+                        android:layout_weight="1"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+
+                    <EditText
+                        android:id="@+id/third_contact_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/third_edit_icon"
+                        android:layout_weight="2"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+        <ImageView
+                android:id="@+id/fourth_edit_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/edit_bg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/fourth_edit_icon"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/title4_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                     android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="第四联络人：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/fourth_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/fourth_edit_icon"
+                        android:layout_weight="1"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+
+                    <EditText
+                        android:id="@+id/fourth_contact_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/fourth_edit_icon"
+                        android:layout_weight="2"
+                        android:textColorHint="@android:color/black"
+                   			 android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+
+    
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

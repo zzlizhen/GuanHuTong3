@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:context=".dialogs.SelectReminderStyleDialog" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#148AEB"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="选择星期"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/sunday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="星期日"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/moday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="星期一"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/tuesday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="星期二"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/wednesday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="星期三"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/thursday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="星期四"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/friday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="星期五"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/saturday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="星期 六"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingBottom="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/ensure_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/corner_blue_btn"
+                android:gravity="center"
+                android:text="确    认"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cancle_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/corner_blue_btn"
+                android:gravity="center"
+                android:text="取    消"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

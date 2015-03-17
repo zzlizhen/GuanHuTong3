@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuanHuTong-3.0</string>
+    <string name="user_name_str">用户名：</string>
+    <string name="pwd_str">密码：</string>
+    <string name="hint_input_username">请输入用户名</string>
+    <string name="hint_input_pwd">请输入密码</string>
+    <string name="btn_login_text">登     录</string>
+    <string name="prompt_username_empty">用户名不能为空</string>
+    <string name="prompt_pwd_empty">密码不能为空</string>
+    <string name="prompt_network_error">登录失败</string>
+    <string name="clickabletext_drawer_switchaccount">切换账号</string>
+    <string name="text_trace_starttime">开始时间</string>
+    <string name="text_trace_endtime">结束时间</string>
+    <string name="btn_trace_confirm">查询</string>
+    <string name="btn_trace_cancle">取消</string>
+    <string name="custom_info_contents">Custom info contents</string>
+    <string name="custom_info_window">Custom info window</string>
+    <string name="default_info_window">Default info window</string>
+    <string name="clear_map">Clear</string>
+    <string name="reset_map">Reset</string>
+    <string name="map_not_ready">SupportMapFragment初始化失败</string>
+
+    <string-array name="main_menu_name_array">
+        <item>弹出</item>
+        <item>白名单</item>
+        <item>菜单三</item>
+        <item>菜单四</item>
+    </string-array>
+    <string-array name="spn_speed_array">
+        <item>慢</item>
+        <item>较慢 </item>
+        <item>一般</item>
+        <item>较快</item>
+        <item>快</item>
+    </string-array>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="text">http://miloisbadboy.com/</string>
+    <string name="hello_world">hello_world</string>
+    <string name="menu_settings">menu_settings</string>
+
+    <string-array name="last_array">
+        <item>最近一周</item>
+        <item>最近一个月</item>
+    </string-array>
+
+</resources>

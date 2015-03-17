@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="210dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+	<TextView 
+	    android:layout_height="45dp"
+	    android:layout_width="match_parent"
+	    android:background="#148AEB"
+	    android:textColor="@android:color/white"
+	    android:text="确认删除"
+	    android:paddingLeft="20dp"
+	    android:textSize="20sp"
+	    android:gravity="center_vertical"
+	    />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="90dp"
+	    android:gravity="center"
+	    android:background="@android:color/white"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="是否解除该终端绑定？"
+	        android:textColor="@android:color/black"
+	        android:textSize="18sp"
+	        />
+	    
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/white"
+	    android:gravity="center"
+	    >
+	    <Button 
+	        android:id="@+id/ensure_btn"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	        android:text="确    认"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	        android:background="@drawable/corner_blue_btn"
+	        android:textColor="@android:color/white"
+	        />
+	     <Button 
+	        android:id="@+id/cancle_btn"
+	        android:layout_width="80dp"
+	        android:layout_height="40dp"
+	        android:text="取    消"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	        android:background="@drawable/corner_blue_btn"
+	        android:textColor="@android:color/white"
+	        android:layout_marginLeft="20dp"
+	        />
+	    
+	</LinearLayout>
+	
+</LinearLayout>
